@@ -13,7 +13,8 @@ const toggleLogin = () => {
 <template>
   <main>
     <h1>Bienvenue sur le site de vos évaluations</h1>
-    <button @click="toggleLogin()">Toggle login to on or off</button>
+    <v-btn :ripple="false" @click="toggleLogin()">Toggle login to on or off</v-btn>
+    <h3>Statuts Login: {{ isLogin }}</h3>
     <div class="buttons" v-if="!isLogin">
       <LoginButtons />
     </div>
