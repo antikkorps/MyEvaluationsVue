@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import LoginButtons from '@/components/LoginButtons.vue'
 import MyDashboardLinks from '@/components/MydashboardLinks.vue'
+import CardHome from '@/components/CardHome.vue'
 
 const isLogin = ref(false)
 
@@ -21,6 +22,7 @@ const toggleLogin = () => {
     <div class="buttons" v-else>
       <MyDashboardLinks />
     </div>
+    <CardHome />
   </main>
 </template>
 
